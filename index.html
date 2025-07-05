@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arje Solution Tech</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #0d6efd;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      background-color: #0d6efd;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 14px 10px;
+      display: inline-block;
+    }
+
+    nav ul li a:hover {
+      background-color: #084298;
+      border-radius: 4px;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    footer {
+      background-color: #f1f1f1;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .halaman {
+      display: none;
+    }
+
+    .aktif {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <header style="position: relative;">
+    <button onclick="toggleDarkMode()" id="darkModeBtn" style="position: absolute; top: 20px; right: 20px;">🌙 Dark Mode</button>
+
+       <nav>
+      <ul>
+        <li><a href="#" onclick="tampilkanHalaman('home')">Home</a></li>
+        <li><a href="#" onclick="tampilkanHalaman('tentang')">Tentang Kami</a></li>
+        <li><a href="#" onclick="tampilkanHalaman('layanan')">Layanan</a></li>
+        <li><a href="#" onclick="tampilkanHalaman('portofolio')">Portofolio</a></li>
+        <li><a href="#" onclick="tampilkanHalaman('kontak')">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="halaman aktif">
+      <h2>Home</h2>
+      <p>Selamat datang di website kami. Ini adalah halaman beranda.</p>
+      <p>Arje Solutions Tech adalah mitra terpercaya Anda dalam mengembangkan solusi perangkat lunak kustom dan konsultasi IT yang cerdas dan inovatif.
+      </p>
+      <img src="Asset/welcome.jpg" alt="Gambar Selamat Datang" style="max-width:100%; height:auto; margin-top:10px;">
+    </section>
+
+    <section id="tentang" class="halaman">
+      <h2>Tentang Kami</h2>
+      <p>Kami adalah tim pengembang web yang berdedikasi untuk membantu Anda membangun kehadiran online yang kuat.</p>
+      <h3>Visi Kami</h3>
+      <p>Menjadi pemimpin dalam inovasi teknologi yang memberdayakan bisnis untuk mencapai potensi penuh mereka di era digital.</p>
+      <h3>Misi Kami</h3>
+      <ul>
+          <li>Menyediakan solusi perangkat lunak berkualitas tinggi yang disesuaikan dengan kebutuhan unik klien.</li>
+          <li>Membangun kemitraan jangka panjang berdasarkan kepercayaan dan keunggulan.</li>
+          <li>Mendorong pertumbuhan dan inovasi melalui riset dan pengembangan berkelanjutan.</li>
+          <li>Menciptakan lingkungan kerja yang kolaboratif dan inspiratif bagi tim kami.</li>
+      </ul>
+      <p>Didirikan pada tahun 2020, InnoTech Solutions telah berkembang pesat menjadi perusahaan teknologi yang diakui atas komitmennya terhadap kualitas dan kepuasan klien. Kami bangga dengan tim ahli kami yang berdedikasi untuk memberikan hasil terbaik.</p>
+      <div class="values-section">
+        <h3>Nilai-Nilai Inti Kami</h3>
+        <div class="values-grid">
+            <div class="value-item">
+                <i class="fas fa-lightbulb"></i>
+                <h4>Inovasi</h4>
+                <p>Kami terus mengeksplorasi teknologi baru untuk memberikan solusi mutakhir.</p>
+            </div>
+            <div class="value-item">
+                <i class="fas fa-handshake"></i>
+                <h4>Kolaborasi</h4>
+                <p>Kami bekerja erat dengan klien, memastikan setiap proyek adalah kemitraan yang sukses.</p>
+            </div>
+            <div class="value-item">
+                <i class="fas fa-medal"></i>
+                <h4>Keunggulan</h4>
+                <p>Kami berkomitmen untuk memberikan kualitas terbaik dalam setiap aspek pekerjaan kami.</p>
+            </div>
+            <div class="value-item">
+                <i class="fas fa-heart"></i>
+                <h4>Integritas</h4>
+                <p>Kepercayaan adalah fondasi hubungan kami, baik dengan klien maupun tim.</p>
+            </div>
+        </div>
+    </div>
+
+    </section>
+
+    <section id="layanan" class="halaman">
+      <h2>Layanan</h2>
+      <p>Kami menyediakan berbagai layanan seperti desain website, pengembangan aplikasi web, dan konsultasi teknologi.</p>
+      <div class="services-grid">
+        <div class="service-item">
+            <i class="fas fa-laptop-code"></i>
+            <h4>Pengembangan Web</h4>
+            <p>Membangun aplikasi web yang responsif, aman, dan berkinerja tinggi menggunakan teknologi terkini.</p>
+        </div>
+        <div class="service-item">
+            <i class="fas fa-mobile-alt"></i>
+            <h4>Pengembangan Mobile</h4>
+            <p>Menciptakan aplikasi mobile iOS dan Android yang intuitif dan kaya fitur untuk menjangkau audiens Anda.</p>
+        </div>
+        <div class="service-item">
+            <i class="fas fa-cloud"></i>
+            <h4>Konsultasi Cloud</h4>
+            <p>Memandu Anda dalam strategi cloud, migrasi, dan optimasi untuk skalabilitas dan efisiensi bisnis.</p>
+        </div>
+        <div class="service-item">
+            <i class="fas fa-shield-alt"></i>
+            <h4>Keamanan Siber</h4>
+            <p>Melindungi aset digital Anda dengan solusi keamanan siber yang komprehensif dan proaktif.</p>
+        </div>
+        <div class="service-item">
+            <i class="fas fa-cogs"></i>
+            <h4>Integrasi Sistem</h4>
+            <p>Menghubungkan berbagai sistem dan aplikasi Anda untuk alur kerja yang mulus dan efisien.</p>
+        </div>
+        <div class="service-item">
+            <i class="fas fa-chart-line"></i>
+            <h4>Analisis Data</h4>
+            <p>Mengubah data menjadi wawasan yang dapat ditindaklanjuti untuk mendukung pengambilan keputusan bisnis Anda.</p>
+        </div>
+    </div>
+    </section>
+
+    <section id="portofolio" class="halaman">
+      <h2>Portofolio</h2>
+      <p>Berikut adalah beberapa proyek terbaru kami yang telah sukses kami selesaikan.</p>
+      <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px;">
+        <img src="Asset/proyek1.jpg" alt="Proyek 1">
+        <img src="Asset/proyek2.jpg" alt="Proyek 2">
+        <img src="Asset/proyek3.jpg" alt="Proyek 3">
+      </div>
+    </section>
+
+    <section id="kontak" class="halaman">
+      <h2>Kontak</h2>
+      <p>Silakan kirim pesan kepada kami melalui form di bawah ini.</p>
+  <form onsubmit="kirimPesan(event)">
+    <label>Nama:</label><br>
+    <input type="text" id="nama" required><br><br>
+    <label>Pesan:</label><br>
+    <textarea id="pesan" rows="4" required></textarea><br><br>
+    <button type="submit">Kirim</button>
+  </form>
+  <p id="respon" style="margin-top:10px; color:green;"></p>
+      <p>Silakan hubungi kami melalui email: <strong>arje.ajah@gmail.com</strong> atau melalui media sosial kami.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Arje Solution Tech. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function tampilkanHalaman(id) {
+      const semuaHalaman = document.querySelectorAll('.halaman');
+      semuaHalaman.forEach(halaman => halaman.classList.remove('aktif'));
+
+      const halamanAktif = document.getElementById(id);
+      if (halamanAktif) {
+        halamanAktif.classList.add('aktif');
+      }
+    }
+  </script>
+</body>
+</html>
